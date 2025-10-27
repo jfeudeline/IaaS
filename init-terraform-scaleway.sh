@@ -22,3 +22,7 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/hashi
 sudo apt update
 sudo apt-get install terraform
 
+# Installation de l'extension Terraform dans VSCode
+
+code-server --install-extension hashicorp.terraform
+
