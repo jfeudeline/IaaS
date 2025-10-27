@@ -1,5 +1,11 @@
+#!/bin/bash
+
+# Chargement des clés SSH
+
 mc cp $PATH_TO_SSHKEY/id_ed25519.pub ~/.ssh/id_ed25519.pub
 mc cp $PATH_TO_SSHKEY/id_ed25519 ~/.ssh/id_ed25519
+
+# Installation de Terraform
 
 sudo apt-get update && sudo apt-get install -y gnupg software-properties-common
 
